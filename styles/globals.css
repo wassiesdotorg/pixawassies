@@ -1,0 +1,168 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+/* https://www.dafont.com/04b-30.font?text=PIXAWASSIES&back=bitmap */
+@font-face {
+  font-family: '04B_30__';
+  src: url('../public/fonts/04B_30__.TTF');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-title {
+  font-family: '04B_30__';
+}
+
+/* https://www.dafont.com/retro-gaming.font */
+@font-face {
+  font-family: 'Retro Gaming';
+  src: url('../public/fonts/Retro\ Gaming.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-text {
+  font-family: 'Retro Gaming';
+}
+
+.title-section {
+  background-image: url(../public/wassiecollagebg.png);
+}
+
+/* https://codepen.io/albpara/pen/JjRarO */
+.title-wrapper, .section-header {
+    box-shadow: 6px 0 black, -6px 0 black, 0 -6px black, 0 6px black;
+    margin: 6px auto;
+}
+
+.title-wrapper.owned {
+  box-shadow: 6px 0 yellow, -6px 0 yellow, 0 -6px yellow, 0 6px yellow;
+}
+
+.section-header {
+  /* box-shadow: 6px 0 #cecece, -6px 0 #cecece, 0 -6px #cecece, 0 6px #cecece; */
+  background-color: white;
+  text-align: center;
+}
+
+/* https://codepen.io/MatthewShields/pen/pwrXpV */
+.input-button {
+   background: #92CD41;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: white;
+    box-shadow: inset -4px -4px 0px 0px #4aa52e;
+}
+
+.input-button:before {
+  top: -6px;
+  left: 0;
+  border-top: 6px black solid;
+  border-bottom: 6px black solid;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+}
+
+.input-button:after {  
+  left: -6px;
+  top: 0;
+  border-left: 6px black solid;
+  border-right: 6px black solid;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.nes-input {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 4px;
+  border-image-slice: 2;
+  border-image-width: 3;
+  border-image-repeat: stretch;
+  border-image-source: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="rgb(33,37,41)" /></svg>');
+  border-image-outset: 2;
+  background-clip: padding-box;
+  overflow: visible;
+}
+
+
+@keyframes walkX {
+  from {background-position-x: 0px;}
+  to {background-position-x: -200%;}
+}
+
+@keyframes walkY {
+  from {background-position-y: 0px;}
+  to {background-position-y: -200%;}
+}
+
+@keyframes jumpX {
+  from {background-position-x: 0px;}
+  to {background-position-x: 0%;}
+}
+
+@keyframes jumpY {
+  from {background-position-y: 0px;}
+  to {background-position-y: -200px;}
+}
+
+@keyframes actionX {
+  from {background-position-x: 0px;}
+  to {background-position-x: -200%;}
+}
+
+@keyframes actionY {
+  from {background-position-y: 0px;}
+  to {background-position-y: 0%;}
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
