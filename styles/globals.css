@@ -58,7 +58,7 @@ a {
 .title-wrapper, .section-header {
     box-shadow: 6px 0 black, -6px 0 black, 0 -6px black, 0 6px black;
     margin: 6px auto;
-}
+} 
 
 .title-wrapper.owned {
   box-shadow: 6px 0 yellow, -6px 0 yellow, 0 -6px yellow, 0 6px yellow;
